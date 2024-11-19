@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #908a8ae0;
+}
+
+#logo{
+  animation: logo 7.3s linear 0.3s infinite ;
+}
+
+@keyframes logo {
+  0%{
+    transform: rotate(0deg);
+
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+@media (max-width:550px) {
+  #box{
+    width: 240px !important;
+    position: relative;
+    
+  }
+  #img1{
+    width: 240px !important;
+    position: relative;
+    
+  }
+  #btn{
+    position: absolute;
+    bottom: 2px;
+  }
+  
+}
+
+
+@media (max-width:947px) {
+  #list{
+    display: none !important;
+  }
+  
+}
+@media (max-width:799px) {
+  #footer{
+    margin-left: 10px;
+    gap: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: max-content;
+    padding-bottom: 30px;
+    background-color: none;
+  }
+  
+}
+
+@media (max-width:400px) {
+  #nav{
+    display: flex;
+   
+    gap: 10px;
+    
+  }
+  #nav1{
+    padding: 10px;
+  }
+  input{
+    padding: 2px !important;
+    margin-left: 14px !important;
+    
+  }
+
+
+}
+
+@media (max-width:555px) {
+  #btn{
+    display: none;
+  }
+  #btn2{
+    display:inline-block !important;
+    background-color: green;
+    padding: 4px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 1px;
+    font-size: 8px;
+    left: 2px;
+    
+    
+  }
+ 
+  #box{
+    position: relative;
+    height: 150px;
+    display: flex;
+    
+  }
+  h2,h1,h3{
+    font-size: 15p;
+    
+  } 
+
+  #bot{
+    font-size: 10px;
+    padding: 2px;
+  }
+ 
+  
+}
+
+#btn2{
+  display: none;
+}
+
+#nav1 {
+  box-shadow: inset -4px -2px 40px 13px rgb(73, 76, 76);
+}
+li{
+  color: rgba(249, 7, 7, 0.931) ;
+  transition: .3s;
+  font-family: Poppins
+  ;
+}
+::placeholder{
+  font-family: Poppins
+  ;
+}
+
+li:hover{
+  color: black;
+  
+}
